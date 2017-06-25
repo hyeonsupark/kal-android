@@ -1,0 +1,17 @@
+query RoomsQuery {
+  allDevices {
+    id
+    nickname
+    rooms {
+      isExit
+      isHost
+      room {
+        id
+        name
+        alarmDate
+        alarmRingName
+        alarmTime
+      }
+    }
+  }
+}
